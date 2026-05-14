@@ -106,8 +106,3 @@ Precise orbit ephemeris products must be downloaded from the following sources:
 | Swarm-A/B/C | ESA Swarm DISC | https://swarm-diss.eo.esa.int/# |
 | PAZ | ESA Earth Online | https://earth.esa.int/eogateway/catalog/paz-esa-archive |
 
-
-## License
-
-TLE data sourced from [Space-Track.org](https://www.space-track.org) is subject to Space-Track's terms of use. Users must agree to Space-Track's terms before accessing or redistributing TLE data.  
-Observation and Precise Ephemeris data are subject to the terms of their respective providers (NASA, ESA, Copernicus).
