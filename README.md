@@ -1,6 +1,6 @@
 # Toward Data-Driven Satellite Orbit Prediction: A Dataset and Method Survey for Multi-Regime Satellites
 
-This repository provides the TLE dataset used in our paper. Observation and Precise Ephemeris data are available via the links below and must be downloaded separately.
+This repository provides the TLE dataset used in our paper. Observation and Precise Ephemeris data are available via the links below and can be downloaded separately.
 
 ---
 
@@ -8,7 +8,7 @@ This repository provides the TLE dataset used in our paper. Observation and Prec
 
 ```
 dataset/
-├── TLE/                        # Included in this repository
+├── TLE/                        
 │   ├── TERRA.tle
 │   ├── QuakeSat.tle
 │   ├── Pegasus.tle
@@ -68,31 +68,7 @@ dataset/
 │       ├── intelsat_1317.tle
 │       ├── intelsat_2514.tle
 │       └── ... (142 satellites)
-│
-├── Observation/                # Download separately (see below)
-│   ├── TERRA/
-│   ├── Cryosat-2/
-│   ├── Swarm/
-│   ├── Galileo/
-│   ├── GLONASS/
-│   ├── Elsa-D/
-│   ├── LAGEOS/
-│   ├── Larets/
-│   ├── Stella/
-│   ├── Blits/
-│   ├── Starlette/
-│   ├── Lares/
-│   ├── Ajisai/
-│   ├── Beacon-C/
-│   └── Jason-3/
-│
-└── Precise_Ephemeris/          # Download separately (see below)
-    ├── GRACE/
-    ├── GRACE-FO/
-    ├── Swarm/
-    ├── Sentinel-3/
-    ├── Sentinel-6A/
-    └── PAZ/
+└── 
 ```
 
 ---
@@ -102,7 +78,6 @@ dataset/
 **Source:** [Space-Track.org](https://www.space-track.org)  
 **Period:** 2004-01-01 ~ 2026-04-30  
 **Format:** Two-Line Element (TLE), ordered by epoch ascending  
-**Class:** `gp_history` (Space-Track API)
 
 TLE files are provided directly in this repository. Each `.tle` file contains the full history of a satellite over the above period.
 
@@ -114,9 +89,6 @@ Observation data consists of Satellite Laser Ranging (SLR) full-rate Consolidate
 
 **SLR CRD (CDDIS):**  
 https://cddis.nasa.gov/archive/slr/data/fr_crd/
-
-> NASA Earthdata account required (free): https://urs.earthdata.nasa.gov  
-> Navigate to the satellite folder (e.g., `fr_crd/larets/`) and download by year.
 
 **GPS Observation:**  
 https://www.earthdata.nasa.gov/data/space-geodesy-techniques/gnss/data-products-holdings
@@ -134,27 +106,6 @@ Precise orbit ephemeris products must be downloaded from the following sources:
 | Swarm-A/B/C | ESA Swarm DISC | https://swarm-diss.eo.esa.int/# |
 | PAZ | ESA Earth Online | https://earth.esa.int/eogateway/catalog/paz-esa-archive |
 
-**File types to download:**
-- Sentinel-3/6: `AUX_POEORB` (EOF format)
-- GRACE-FO: `GNI1B` (5-second interval, ECI frame)
-- Swarm: SP3 files under `Level2daily/Latest_baselines/POD/RD/`
-- PAZ: Precise orbit product from ESA archive
-
----
-
-## Citation
-
-If you use this dataset, please cite our paper:
-
-```bibtex
-@article{jung2025satellite,
-  title={Toward Data-Driven Satellite Orbit Prediction: A Dataset and Method Survey for Multi-Regime Satellites},
-  author={Jung, Seungwon and others},
-  year={2025}
-}
-```
-
----
 
 ## License
 
